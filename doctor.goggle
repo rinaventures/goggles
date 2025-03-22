@@ -6,20 +6,20 @@
 ! issues: https://www.teamrina.com#help
 ! avatar: #264D86
 
-site:npinumberlookup.org
-site:npinumbers.com
-site:healthcareproviderregistry.gov
-site:npinationwide.org
-site:ama-assn.org/physician-finder
-site:healthgrades.com
-site:vitals.com
-site:medboard.state*.gov
-site:doximity.com
-site:healthcareproviders.net
-site:physiciandata.org
-boost(3.0): "NPI directory"
-boost(2.5): "physician lookup"
-boost(2.0): "healthcare provider search"
-prefer: intitle:"provider directory"
-prefer: inurl:provider-search
-prefer: inurl:npi-lookup
+$site=npinumberlookup.org
+$site=npinumbers.com
+$site=healthcareproviderregistry.gov
+$site=npinationwide.org
+$site=ama-assn.org/physician-finder
+$site=healthgrades.com
+$site=vitals.com
+$site=medboard.state*.gov
+$site=doximity.com
+$site=healthcareproviders.net
+$site=physiciandata.org
+"NPI directory"$boost=3
+"physician lookup"$boost=2
+"healthcare provider search"$boost=2
+intitle:"provider directory"$boost
+inurl:provider-search$boost
+inurl:npi-lookup$boost
