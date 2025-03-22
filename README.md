@@ -1,3 +1,3 @@
 # goggles
 
-just a collection of miscellaenous goggles `¯\(ツ)/¯`
+just a collection of miscellaneous goggles `¯\(ツ)/¯`
