@@ -7,7 +7,7 @@
 ! avatar: #264D86
 
 $discard
-$site=npinumberlookup.org
+$site=npinumberlookup.org,boost=10
 $site=npinumbers.com
 $site=healthcareproviderregistry.gov
 $site=npinationwide.org
