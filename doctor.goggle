@@ -1,1 +1,25 @@
+! name: Healthcare Provider Search
+! description: Since it will probably be at least 75 millenia before humanity figures out how to make an accurate and comprehensive healthcare provider directory, we're just gonna search instead. This goggle is designed to help you find a specific healthcare provider or organization based on whatever search terms you can muster. Might be good in a patient-facing use case.
+! public: true
+! author: rina-john @ rina ventures
+! homepage: https://www.teamrina.com
+! issues: https://www.teamrina.com#help
+! avatar: #264D86
 
+site:npinumberlookup.org
+site:npinumbers.com
+site:healthcareproviderregistry.gov
+site:npinationwide.org
+site:ama-assn.org/physician-finder
+site:healthgrades.com
+site:vitals.com
+site:medboard.state*.gov
+site:doximity.com
+site:healthcareproviders.net
+site:physiciandata.org
+boost(3.0): "NPI directory"
+boost(2.5): "physician lookup"
+boost(2.0): "healthcare provider search"
+prefer: intitle:"provider directory"
+prefer: inurl:provider-search
+prefer: inurl:npi-lookup
