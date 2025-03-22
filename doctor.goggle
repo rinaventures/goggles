@@ -6,14 +6,157 @@
 ! issues: https://www.teamrina.com#help
 ! avatar: #264D86
 
-$discard
-$site=npinumberlookup.org,boost=10
-$site=npinumbers.com
-$site=healthcareproviderregistry.gov
-$site=npinationwide.org
-$site=healthgrades.com
-$site=vitals.com
-$site=doximity.com
-$site=healthcareproviders.net
-$site=physiciandata.org
-NPI$boost=3
+# Boost official provider directories and NPI databases
+# These are the most reliable sources for finding provider information
+$boost=5,site=npiregistry.cms.hhs.gov
+$boost=5,site=nppes.cms.hhs.gov
+$boost=4,site=npidb.org
+$boost=4,site=npinumberlookup.org
+$boost=4,site=cms.gov/regulations-and-guidance/administrative-simplification/nationalprovidentstand
+$boost=4,site=pverify.com/npi-lookup
+$boost=3,site=careprecise.com
+
+# Boost hospital and healthcare system provider directories
+# Hospital websites often have reliable provider information
+$boost=4,site=*.org/find-a-doctor
+$boost=4,site=*.org/find-a-provider
+$boost=4,site=*.org/doctors
+$boost=4,site=*.org/providers
+$boost=4,site=*.org/physician-directory
+$boost=4,site=*.com/find-a-doctor
+$boost=4,site=*.com/find-a-provider
+$boost=4,site=*.com/doctors
+$boost=4,site=*.com/providers
+$boost=4,site=*.com/physician-directory
+$boost=4,site=*.edu/find-a-doctor
+$boost=4,site=*.edu/find-a-provider
+$boost=4,site=*.edu/doctors
+$boost=4,site=*.edu/providers
+$boost=4,site=*.edu/physician-directory
+
+# Boost major healthcare provider finder websites
+# These sites have comprehensive databases of providers
+$boost=4,site=healthgrades.com
+$boost=4,site=zocdoc.com
+$boost=4,site=doctor.webmd.com
+$boost=3,site=vitals.com
+$boost=3,site=ratemds.com
+$boost=3,site=wellness.com
+$boost=3,site=doctor.com
+$boost=3,site=doximity.com
+$boost=3,site=usnews.com/doctors
+
+# Boost medical association directories
+# Professional associations often maintain accurate member directories
+$boost=3,site=ama-assn.org/doctorfinder
+$boost=3,site=aafp.org/family-physician
+$boost=3,site=abms.org
+$boost=3,site=fsmb.org
+$boost=3,site=certificationmatters.org
+
+# Boost insurance provider directories
+# Insurance companies maintain directories of in-network providers
+$boost=3,site=*.aetna.com/*/docfind
+$boost=3,site=provider.bcbs.com
+$boost=3,site=*.cigna.com/*/provider-directory
+$boost=3,site=*.humana.com/*/provider
+$boost=3,site=*.uhc.com/*/find-a-doctor
+
+# Boost health department and government healthcare sites
+# Government sites have official healthcare information
+$boost=3,site=*.gov/*/provider
+$boost=3,site=*.gov/*/physician
+$boost=3,site=*.gov/*/doctor
+$boost=3,site=*.gov/*/healthcare-provider
+
+# Downrank non-healthcare related content
+# These sites are less likely to have accurate provider information
+$downrank=3,site=facebook.com
+$downrank=3,site=instagram.com
+$downrank=3,site=twitter.com
+$downrank=3,site=tiktok.com
+$downrank=3,site=reddit.com
+$downrank=3,site=quora.com
+$downrank=2,site=youtube.com
+$downrank=2,site=pinterest.com
+
+# Downrank sites that may have outdated or unreliable information
+$downrank=2,site=yelp.com
+$downrank=2,site=yellowpages.com
+$downrank=2,site=superpages.com
+
+# Boost pages with provider information indicators in URL
+$boost=2,/doctor/
+$boost=2,/physician/
+$boost=2,/provider/
+$boost=2,/md/
+$boost=2,/npi/
+$boost=2,/medical-staff/
+$boost=2,/healthcare-professionals/
+$boost=2,/medical-providers/
+$boost=2,/practitioners/
+
+# Boost pages with common provider information in URL
+$boost=2,/family-medicine/
+$boost=2,/pediatrics/
+$boost=2,/internal-medicine/
+$boost=2,/primary-care/
+$boost=2,/cardiology/
+$boost=2,/neurology/
+$boost=2,/oncology/
+$boost=2,/orthopedics/
+$boost=2,/dermatology/
+$boost=2,/obgyn/
+$boost=2,/urology/
+$boost=2,/psychiatry/
+$boost=2,/surgery/
+
+# Prioritize results with NPI numbers or provider credentials
+$boost=3,/npi-number/
+$boost=3,/npi-registry/
+$boost=3,/national-provider-identifier/
+$boost=2,/md/
+$boost=2,/do/
+$boost=2,/np/
+$boost=2,/pa/
+$boost=2,/aprn/
+$boost=2,/dnp/
+
+# Boost results with provider contact information
+$boost=2,/contact/
+$boost=2,/locations/
+$boost=2,/phone-number/
+$boost=2,/fax/
+$boost=2,/office/
+$boost=2,/clinic/
+$boost=2,/practice/
+
+# Prioritize comprehensive provider profiles
+$boost=3,/profile/
+$boost=3,/biography/
+$boost=3,/bio/
+$boost=3,/about/
+$boost=3,/credentials/
+$boost=3,/specialties/
+$boost=3,/expertise/
+
+# Downrank results that are likely commercial or advertisement-heavy
+$downrank=2,/sponsored/
+$downrank=2,/advertisement/
+$downrank=2,/paid-listing/
+$downrank=2,/marketing/
+$downrank=2,/sell/
+$downrank=2,/shop/
+$downrank=2,/product/
+
+# Boost results with provider availability information
+$boost=2,/schedule/
+$boost=2,/appointment/
+$boost=2,/book-online/
+$boost=2,/availability/
+$boost=2,/accepting-new-patients/
+$boost=2,/insurance-accepted/
+
+# Special boost for provider directories that include NPI validation
+$boost=5,site=npiregistry.cms.hhs.gov/*/search
+$boost=5,site=nppes.cms.hhs.gov/*/search
