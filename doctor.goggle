@@ -16,24 +16,28 @@ $boost=4,site=pverify.com
 $boost=3,site=careprecise.com
 
 # Boost hospital and healthcare system provider directories
-$boost=4,site=*.org
-/find-a-doctor/$boost=2
-/find-a-provider/$boost=2
-/doctors/$boost=2
-/providers/$boost=2
-/physician-directory/$boost=2
-$boost=4,site=*.com
-/find-a-doctor/$boost=2
-/find-a-provider/$boost=2
-/doctors/$boost=2
-/providers/$boost=2
-/physician-directory/$boost=2
-$boost=4,site=*.edu
-/find-a-doctor/$boost=2
-/find-a-provider/$boost=2
-/doctors/$boost=2
-/providers/$boost=2
-/physician-directory/$boost=2
+$boost=4,site=hopkinsmedicine.org
+$boost=4,site=mayoclinic.org
+$boost=4,site=clevelandclinic.org
+$boost=4,site=stanfordhealthcare.org
+$boost=4,site=mountsinai.org
+$boost=4,site=ucsf.edu
+$boost=4,site=pennmedicine.org
+$boost=4,site=massgeneral.org
+$boost=4,site=nyulangone.org
+$boost=4,site=baptisthealth.com
+$boost=4,site=uclahealth.org
+$boost=4,site=kp.org
+
+# Boost path patterns for finding doctors
+/find-a-doctor/$boost=3
+/find-a-provider/$boost=3
+/doctors/$boost=3
+/providers/$boost=3
+/physician-directory/$boost=3
+/find-physician/$boost=3
+/doctor-finder/$boost=3
+/provider-search/$boost=3
 
 # Boost major healthcare provider finder websites
 $boost=4,site=healthgrades.com
@@ -54,14 +58,18 @@ $boost=3,site=fsmb.org
 $boost=3,site=certificationmatters.org
 
 # Boost insurance provider directories
-$boost=3,site=*.aetna.com
-$boost=3,site=provider.bcbs.com
-$boost=3,site=*.cigna.com
-$boost=3,site=*.humana.com
-$boost=3,site=*.uhc.com
+$boost=3,site=aetna.com
+$boost=3,site=bcbs.com
+$boost=3,site=cigna.com
+$boost=3,site=humana.com
+$boost=3,site=uhc.com
 
 # Boost health department and government healthcare sites
-$boost=3,site=*.gov
+$boost=3,site=hhs.gov
+$boost=3,site=nih.gov
+$boost=3,site=medicare.gov
+$boost=3,site=medicaid.gov
+$boost=3,site=va.gov
 
 # Downrank non-healthcare related content
 $downrank=3,site=facebook.com
