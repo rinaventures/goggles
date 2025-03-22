@@ -6,6 +6,7 @@
 ! issues: https://www.teamrina.com#help
 ! avatar: #264D86
 
+$discard
 $site=npinumberlookup.org
 $site=npinumbers.com
 $site=healthcareproviderregistry.gov
@@ -15,6 +16,4 @@ $site=vitals.com
 $site=doximity.com
 $site=healthcareproviders.net
 $site=physiciandata.org
-"NPI directory"$boost=3
-"physician lookup"$boost=2
-"healthcare provider search"$boost=2
+NPI$boost=3
