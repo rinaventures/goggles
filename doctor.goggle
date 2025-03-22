@@ -18,6 +18,3 @@ $site=physiciandata.org
 "NPI directory"$boost=3
 "physician lookup"$boost=2
 "healthcare provider search"$boost=2
-intitle:"provider directory"$boost
-inurl:provider-search$boost
-inurl:npi-lookup$boost
